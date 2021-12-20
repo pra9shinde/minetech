@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #012a93;
+    --grey-color: #ced4da;
+    --dark-grey-color: #343a40;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+input:focus {
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.main-container {
+    max-width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full-viewheight {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.col2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.primary-color-text {
+    color: var(--main-color);
+}

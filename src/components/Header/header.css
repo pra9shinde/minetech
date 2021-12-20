@@ -1,0 +1,13 @@
+.header {
+    margin: 20px 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.header__logo {
+    color: var(--main-color);
+    font-size: 34px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
