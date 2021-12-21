@@ -1,13 +1,15 @@
 import React from 'react';
 import './register.css';
 import { Link } from 'react-router-dom';
+import loginImg from '../../assets/images/login.png';
+
 import LeftBanner from '../LeftBanner';
 
 const index = () => {
     return (
         <div className='full-viewheight'>
             <div className='login-signup-container'>
-                <LeftBanner />
+                <LeftBanner img={loginImg} />
                 <div className='login-signup__right'>
                     <div className='login-signup__right-container'>
                         <div className='login__title'>

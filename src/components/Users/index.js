@@ -1,14 +1,13 @@
 import React from 'react';
 import './users.css';
 import User from '../User';
+import Heading from '../Heading';
 
 const index = () => {
     return (
         <div className='main-container'>
             <div className='users'>
-                <div class='heading'>
-                    <h1>Users</h1>
-                </div>
+                <Heading title='Users' />
                 <div className='users__container'>
                     <User />
                     <User />

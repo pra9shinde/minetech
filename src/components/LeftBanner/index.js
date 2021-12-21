@@ -1,11 +1,10 @@
 import React from 'react';
-import loginImg from '../../assets/images/login.png';
 
-const index = () => {
+const index = ({ img }) => {
     return (
         <div className='login-signup-left'>
             <div className='login__image'>
-                <img src={loginImg} alt='Minetech Login' />
+                <img src={img} alt='Minetech Login' />
             </div>
         </div>
     );

@@ -5,6 +5,7 @@ import './login.css';
 import fbImg from '../../assets/images/fb.svg';
 import googleImg from '../../assets/images/google.svg';
 import twitterImg from '../../assets/images/twitter.svg';
+import loginImg from '../../assets/images/login.png';
 
 import LeftBanner from '../LeftBanner';
 
@@ -13,7 +14,7 @@ const Login = () => {
         <>
             <div className='full-viewheight'>
                 <div className='login-signup-container'>
-                    <LeftBanner />
+                    <LeftBanner img={loginImg} />
                     <div className='login-signup__right'>
                         <div className='login-signup__right-container'>
                             <div className='login__title'>
