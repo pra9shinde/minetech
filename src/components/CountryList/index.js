@@ -3,7 +3,7 @@ import './countrylist.css';
 import Heading from '../Heading';
 import LeftBanner from '../LeftBanner';
 import worldImg from '../../assets/images/world.svg';
-import Country from '../Country';
+import Flag from '../Flag';
 
 const Index = () => {
     const [countries, setCountries] = useState([]);
@@ -37,11 +37,7 @@ const Index = () => {
                     <div className='login-signup__right'>
                         <div className='country-list'>
                             {countries.map((country, i) => (
-                                <Country
-                                    key={i}
-                                    flag={require(`../../assets/images/flags/${country.replace(/\s/g, '')}.svg`)}
-                                    countryName={country}
-                                />
+                                <Flag key={i} flag={require(`../../assets/images/flags/${country.replace(/\s/g, '')}.svg`)} countryName={country} />
                             ))}
                         </div>
                     </div>
