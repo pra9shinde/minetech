@@ -1,10 +1,15 @@
-import React from 'react'
-import Login from '../components/Login/Login'
+import React from 'react';
+import Login from '../components/Login/Login';
+import Header from '../components/Header/Header';
 
 const SignIn = () => {
     return (
-      <Login />
-    )
-}
+        <>
+            <Header />
 
-export default SignIn
+            <Login />
+        </>
+    );
+};
+
+export default SignIn;

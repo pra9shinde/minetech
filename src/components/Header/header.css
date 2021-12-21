@@ -1,8 +1,15 @@
 .header {
-    margin: 20px 50px;
+    padding: 20px 50px;
     position: fixed;
     left: 0;
     top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.header.shadow {
+    background-color: #fff;
+    box-shadow: 0 0px 25px -12px rgb(0 0 0 / 30%);
 }
 
 .header__logo {
@@ -10,4 +17,38 @@
     font-size: 34px;
     font-weight: 800;
     text-transform: uppercase;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+}
+
+.header ul li {
+    margin: 0 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.header ul li a {
+    color: #000;
+    padding: 5px;
+    transition: 0.3s ease-in all;
+    border-bottom: 2px solid transparent;
+}
+
+.header ul li a:hover {
+    border-bottom: 2px solid var(--main-color);
+}
+
+.header ul li.active a {
+    color: var(--main-color) !important;
 }
