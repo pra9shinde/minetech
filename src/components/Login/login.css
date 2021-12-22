@@ -131,3 +131,70 @@
     font-weight: 300;
     line-height: normal;
 }
+
+@media only screen and (max-width: 1200px) {
+    .login-signup-container.mobile-hide .login-signup-left {
+        display: none;
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .login-signup__right {
+        margin: auto;
+        flex: 0.8 1;
+    }
+
+    .login__title h1 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    .login-signup__right {
+        flex: 0.9;
+    }
+
+    .input label {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .input input {
+        height: 40px;
+    }
+
+    .btn button {
+        margin: 0;
+        height: 40px;
+    }
+
+    .input {
+        margin-bottom: 10px;
+    }
+
+    .login__social .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .login__title h1 {
+        font-size: 22px;
+        margin: 8px;
+    }
+
+    .col2 {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 468px), screen and (max-height: 800px) {
+    .full-viewheight.register {
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .full-viewheight.register .login-signup-container {
+        margin-top: 80px;
+    }
+}

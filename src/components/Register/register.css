@@ -75,3 +75,9 @@
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+.form-error {
+    margin-top: 5px;
+    padding: 0 5px;
+    color: orangered;
+}

@@ -32,7 +32,7 @@ const Index = () => {
         <>
             <div className='main-container'>
                 <Heading title='Countries' />
-                <div className='login-signup-container'>
+                <div className='login-signup-container countries'>
                     <LeftBanner img={worldImg} />
                     <div className='login-signup__right'>
                         <div className='country-list'>

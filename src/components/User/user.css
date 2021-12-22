@@ -173,3 +173,36 @@
         opacity: 1;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .profile-card {
+        width: 250px;
+        padding: 15px 20px 20px;
+    }
+
+    .profile-card header h1 {
+        font-size: 18px;
+    }
+
+    .profile-card header h2 {
+        font-size: 12px;
+    }
+
+    .profile-bio p {
+        font-size: 14px;
+    }
+
+    .profile-card .display-img a,
+    .profile-card .display-img a img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-social-links li a {
+        width: 45px;
+        height: 45px;
+    }
+    .profile-social-links li a img {
+        margin: 13px auto 0;
+    }
+}

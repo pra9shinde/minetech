@@ -6,16 +6,27 @@ import Users from './pages/Users';
 import Countries from './pages/Countries';
 import Country from './pages/Country';
 
+import AuthRoute from './pages/AuthRoute';
+
 function App() {
     return (
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path='/login' element={<SignIn />} />
-                    <Route path='/register' element={<SignUp />} />
-                    <Route path='/country' element={<Countries />} />
-                    <Route path='/country/:countryId' element={<Country />} />
-                    <Route path='/' element={<Users />} />
+                    <Route exact path='/login' element={<SignIn />} />
+                    <Route exact path='/register' element={<SignUp />} />
+
+                    <Route exact path='/country' element={<AuthRoute />}>
+                        <Route exact path='/country' element={<Countries />} />
+                    </Route>
+
+                    <Route exact path='/country/:countryId' element={<AuthRoute />}>
+                        <Route exact path='/country/:countryId' element={<Country />} />
+                    </Route>
+
+                    <Route exact path='/' element={<AuthRoute />}>
+                        <Route exact path='/' element={<Users />} />
+                    </Route>
                 </Routes>
             </BrowserRouter>
         </>
