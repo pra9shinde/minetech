@@ -40,6 +40,16 @@ table td {
     color: #000;
 }
 
+.player-name {
+    display: flex;
+    align-items: center;
+}
+
+.player-name img {
+    width: 30px;
+    margin-left: 10px;
+}
+
 @media only screen and (max-width: 600px) {
     table th {
         padding: 20px 40px;

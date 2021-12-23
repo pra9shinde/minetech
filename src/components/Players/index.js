@@ -3,9 +3,14 @@ import './players.css';
 
 import sortImg from '../../assets/images/sort.png';
 import useSort from '../../hooks/useSort';
+import captainImg from '../../assets/images/captain-band.png';
 
 const Players = ({ players }) => {
     const { items, requestSort } = useSort(players);
+    console.log('====================================');
+    console.log(items);
+    console.log('====================================');
+
     return (
         <div className='players'>
             <div className='table'>
@@ -25,7 +30,11 @@ const Players = ({ players }) => {
                     <tbody>
                         {items.map((item) => (
                             <tr>
-                                <td>{item.name}</td>
+                                <td>
+                                    <div className='player-name'>
+                                        <span> {item.name} </span> {item.captain && <img src={captainImg} alt='' />}
+                                    </div>
+                                </td>
                                 <td>{item.lastName}</td>
                             </tr>
                         ))}
